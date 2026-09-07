@@ -1,0 +1,37 @@
+mf6Voronoi Studio - Windows install notes
+==========================================
+
+FOR END USERS (just want to run the app)
+-----------------------------------------
+If you were given an installer (mf6VoronoiStudio-<version>-Setup.exe) or a
+portable ZIP, you do not need Python at all:
+
+  * Installer   : double-click it, follow the wizard, then launch
+                  "mf6Voronoi Studio" from the Start Menu.
+  * Portable ZIP: unzip anywhere, then double-click
+                  "Run mf6Voronoi Studio.bat".
+
+FOR DEVELOPERS (running/building from source)
+-----------------------------------------------
+1. Install Python 3.10-3.12 (64-bit) from
+   https://www.python.org/downloads/windows/
+   During setup, TICK "Add python.exe to PATH".
+
+   If Windows shows "Python was not found... Microsoft Store", that is a
+   placeholder, not real Python. Install it as above, and if needed, turn
+   off the Store aliases under:
+     Settings > Apps > Advanced app settings > App execution aliases
+
+2. Double-click CHECK_PYTHON.bat to confirm Python is really installed.
+
+3. Run from source:
+     pip install -r requirements.txt
+     python mf6voronoi_gui.py
+
+4. Build a distributable, either:
+     - double-click build_windows.bat, or
+     - run one of: build_exe.py / build_portable.py / build_installer.py /
+       build_all.py
+
+   The Windows installer step needs Inno Setup 6, free from
+   https://jrsoftware.org/isdl.php.

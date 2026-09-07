@@ -1,0 +1,34 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# --- Build / packaging outputs (large binaries; do not commit) ---
+build/
+dist/
+installer_output/
+portable_output/
+portable_build/
+version.iss
+build_log*.txt
+installer_log*.txt
+
+# --- Local settings / user data (may contain machine-specific or
+#     site-specific info -- never commit) ---
+*.ini
+*.mf6vor
+
+# --- Editor / OS cruft ---
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+
+# --- Documentation build (node deps + intermediate build artifacts) ---
+docs/manual/node_modules/
+docs/manual/.build/
+docs/manual/_example_output/
+docs/manual/capture_facts.json
