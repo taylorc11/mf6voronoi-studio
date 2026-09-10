@@ -125,19 +125,7 @@ Start Guide below without preparing your own data first.
 Editable `.docx` sources and the doc-build pipeline live alongside the PDFs in
 `docs/manual/` — see `docs/manual/README.md`.
 
-## Distribution formats
 
-| Format | Command | Best for |
-|---|---|---|
-| **Standalone folder** | `python build_exe.py` | Running/testing locally; no Python needed |
-| **Portable ZIP** | `python build_portable.py` | USB stick / locked-down PCs; no install |
-| **Windows installer** | `python build_installer.py` | Install to Program Files with shortcuts & uninstaller |
-| **All at once** | `python build_all.py` | Produce every artifact in one command |
-
-On Windows, double-click **`build_windows.bat`** — it builds the exe, then offers
-the portable ZIP and installer.
-
----
 
 ## Typical workflow
 
