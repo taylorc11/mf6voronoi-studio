@@ -153,13 +153,8 @@ Each surface — the model **top** and every **layer bottom** — can be a const
 |---|---|
 | `mf6voronoi_gui.py` | Thin entry point: builds the `QApplication`, applies the theme, shows the main window. |
 | `ui/` | The PyQt5 application: `theme.py` (palette/QSS/icons), `canvas.py` + `scene_items.py` (the `QGraphicsView` map), `dialogs.py`, `online_imagery.py` (satellite basemap tab), `main_window.py`. |
-| `engine.py` | Headless backend: meshing, quality report, save/load, raster sampling, exports. |
 | `mf6voronoi_bootstrap.py` | Stubs `pyvista`/VTK when absent so `import mf6Voronoi` stays light. |
 | `version.py` | Single source of truth for the app version, used by the build scripts. |
-| `mf6voronoi_studio.spec` | PyInstaller spec (onedir, all geodata bundled). |
-| `build_exe.py` / `build_portable.py` / `build_installer.py` / `build_all.py` | Build scripts. |
-| `build_windows.bat` / `CHECK_PYTHON.bat` / `INSTALL_WINDOWS.txt` | Windows helpers. |
-| `installer.iss` | Inno Setup script (generates `version.iss` at build time). |
 | `mf6voronoi.ico` | App icon. |
 | `Example/` | Sample shapefiles/rasters used throughout the manual and Quick Start Guide. |
 | `docs/manual/` | User manual and Quick Start Guide sources + built PDF/DOCX (English & Spanish). |
