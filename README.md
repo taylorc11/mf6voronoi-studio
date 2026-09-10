@@ -88,9 +88,7 @@ PATH"**.
 
 > If Windows shows *"Python was not found… Microsoft Store"*, real Python isn't
 > installed yet. Install it as above (and, if needed, turn off the Store aliases
-> under *Settings → Apps → Advanced app settings → App execution aliases*). On
-> Windows, double-click **`CHECK_PYTHON.bat`** to confirm, then run
-> **`build_windows.bat`**. See `INSTALL_WINDOWS.txt`.
+> under *Settings → Apps → Advanced app settings → App execution aliases*).
 
 ## Install (from source)
 
@@ -102,12 +100,7 @@ python mf6voronoi_gui.py
 > `mf6Voronoi` pins `numpy<2.2.5`. If a dependency upgrades numpy, re-pin it:
 > `pip install "numpy<2.2.5"`.
 
-> **Building a standalone `.exe` or installer?** Do it from a clean virtual
-> environment (`python -m venv .venv`, then install only
-> `requirements.txt` + `pyinstaller` into it) rather than a general-purpose
-> Python install — PyInstaller bundles *every* importable package it can see,
-> and an environment with unrelated projects installed produces a much larger
-> executable than necessary. `build_windows.bat` already does this for you.
+
 
 The `Example/` folder ships a ready-to-use set of shapefiles and rasters (model
 limit, refinement layers, background rasters) so you can follow the Quick
@@ -115,16 +108,12 @@ Start Guide below without preparing your own data first.
 
 ## Documentation
 
-* [`docs/manual/mf6VoronoiStudio-3.0.0-Quick-Start-Guide.pdf`](docs/manual/mf6VoronoiStudio-3.0.0-Quick-Start-Guide.pdf)
-  ([Guía de Inicio Rápido](docs/manual/mf6VoronoiStudio-3.0.0-Guia-de-Inicio-Rapido.pdf)) —
+* [`Docs/mf6VoronoiStudio-3.0.0-Quick-Start-Guide.pdf`](Docs/mf6VoronoiStudio-3.0.0-Quick-Start-Guide.pdf)
+  ([Guía de Inicio Rápido](Docs/mf6VoronoiStudio-3.0.0-Guia-de-Inicio-Rapido.pdf)) —
   a single walkthrough using the `Example/` folder, start to finished mesh.
-* [`docs/manual/mf6VoronoiStudio-3.0.0-User-Manual.pdf`](docs/manual/mf6VoronoiStudio-3.0.0-User-Manual.pdf)
-  ([Manual de Usuario](docs/manual/mf6VoronoiStudio-3.0.0-Manual-de-Usuario.pdf)) —
+* [`Docs/mf6VoronoiStudio-3.0.0-User-Manual.pdf`](Docs/mf6VoronoiStudio-3.0.0-User-Manual.pdf)
+  ([Manual de Usuario](Docs/mf6VoronoiStudio-3.0.0-Manual-de-Usuario.pdf)) —
   the full reference manual, screenshot-by-screenshot.
-
-Editable `.docx` sources and the doc-build pipeline live alongside the PDFs in
-`docs/manual/` — see `docs/manual/README.md`.
-
 
 
 ## Typical workflow
