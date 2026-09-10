@@ -13,7 +13,7 @@ refinement multiplier, generate the Voronoi mesh, review a cell-count/quality
 report, and export to an ESRI Shapefile, DISV JSON, or a **ModelMuse-importable
 MODFLOW 6 model** (with optional per-layer top/botm rasters).
 
-![Main window with a generated mesh](docs/manual/images/28_main_final.png)
+![Main window with a generated mesh](Docs/images/28_main_final.png)
 
 ---
 
@@ -26,7 +26,7 @@ MODFLOW 6 model** (with optional per-layer top/botm rasters).
   project** or **export it as a georeferenced GeoTIFF** (reprojected into the
   project's CRS, or an auto-detected UTM zone) to keep and re-import later.
 
-  ![Online satellite imagery tab](docs/manual/images/30_dialog_online_imagery.png)
+  ![Online satellite imagery tab](Docs/images/30_dialog_online_imagery.png)
 
 * **Fixed**: a packaging bug where `pyproj` and `rasterio` could ship
   mismatched bundled PROJ databases in the frozen executable, crashing any
