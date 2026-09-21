@@ -16,7 +16,25 @@ MODFLOW 6 model** (with optional per-layer top/botm rasters).
 ![Main window with a generated mesh](Docs/images/28_main_final.png)
 
 ---
+## What's new in 3.0.1
 
+* **Meshing engine upgraded to `mf6Voronoi` 0.0.38** (was 0.0.37). The new
+  engine is vectorised and needs **NumPy 2** and **GeoPandas 1**. Help → About
+  now shows the engine version. Because the algorithm changed, the same inputs
+  give slightly different cell counts than 3.0.0 (the tutorial mesh went from
+  1,134 to 1,173 cells); refinement along boundary-condition lines near the
+  model edge is unchanged.
+* **Fixed: MODFLOW 6 could abort** (`forrtl: error (65): floating invalid`)
+  on exported meshes. Clipping left edges a few micrometres long; vertices closer
+  than 1 cm are now merged (neighbouring cells stay conforming). Verified by
+  solving 12 different meshes in MODFLOW 6 — two of them crashed before, even
+  on 0.0.37.
+* **Fixed:** the new engine calls `exit()` on bad input, which would silently
+  kill the meshing thread; it is now reported as a normal error in the Log.
+* Updated the user manuals and quick-start guides (English and Spanish) to 3.0.1.
+* Added `tests/` (headless engine + GUI checks, including a real MODFLOW 6 run)
+  and an `mf6VoronoiStudio.exe --selftest` switch that verifies an install.
+  
 ## What's new in 3.0.0
 
 * **Online satellite imagery**: the background-image dialog now has a second
