@@ -1,0 +1,28 @@
+# mf6Voronoi Studio — runtime dependencies
+#
+# Install with:  pip install -r requirements.txt
+#
+# Tested with Python 3.12 and the versions noted on the right.
+# `pip-audit` reported no known vulnerabilities for this set (v3.0.1).
+# mf6Voronoi 0.0.38 requires numpy>=2.0 and geopandas>=1.0 (the old
+# "numpy<2.2.5" pin from mf6Voronoi 0.0.37 no longer applies).
+
+mf6Voronoi>=0.0.38     # the meshing engine this GUI drives (tested 0.0.38)
+PyQt5>=5.15            # desktop GUI toolkit + native QGraphicsView map canvas (5.15.11)
+Pillow>=11.3           # PNG/JPG image reading; floor is above known image-parser CVEs (12.3.0)
+geopandas>=1.0         # shapefile I/O and geometry handling (1.1.4)
+shapely>=2.1           # geometry primitives (2.1.2)
+fiona>=1.10            # vector I/O (used by mf6Voronoi and geopandas) (1.10.1)
+pyproj>=3.7            # CRS handling / unit validation (3.8.0)
+numpy>=2.0             # required by mf6Voronoi 0.0.38 (2.2.4)
+pandas>=2.2.2          # used by the GUI for interactive layer editing (3.0.5)
+flopy>=3.10            # writes the ModelMuse-importable MODFLOW 6 DISV model (3.11.0)
+rasterio>=1.4          # GeoTIFF background images AND per-layer top/botm sampling (1.5.1)
+
+# Pulled in automatically by mf6Voronoi (listed for completeness):
+# scipy, tqdm, pyvista, scikit-image, paramiko
+#   (pyvista/vtk are optional for this GUI — mf6voronoi_bootstrap.py stubs them
+#    if missing, so the executable ships without them.)
+
+# --- Optional, only needed to BUILD the standalone executable ---
+# pyinstaller>=6.0

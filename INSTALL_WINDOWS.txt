@@ -1,0 +1,32 @@
+mf6Voronoi Studio - Windows install notes
+==========================================
+
+FOR END USERS (just want to run the app)
+-----------------------------------------
+If you were given the installer (mf6VoronoiStudio-<version>-Setup.exe) you do
+not need Python at all: double-click it, follow the wizard, then launch
+"mf6Voronoi Studio" from the Start Menu.
+
+Before running a downloaded installer, check its SHA-256 against
+SHA256SUMS.txt from the same release page:
+    certutil -hashfile mf6VoronoiStudio-3.0.1-Setup.exe SHA256
+The installer is not code-signed, so SmartScreen may warn on first run.
+To verify an install works:  mf6VoronoiStudio.exe --selftest
+(result is written to %TEMP%\mf6voronoi_selftest.txt).
+
+FOR DEVELOPERS (running from source)
+-----------------------------------------------
+1. Install Python 3.10-3.12 (64-bit) from
+   https://www.python.org/downloads/windows/
+   During setup, TICK "Add python.exe to PATH".
+
+   If Windows shows "Python was not found... Microsoft Store", that is a
+   placeholder, not real Python. Install it as above, and if needed, turn
+   off the Store aliases under:
+     Settings > Apps > Advanced app settings > App execution aliases
+
+2. Double-click CHECK_PYTHON.bat to confirm Python is really installed.
+
+3. Run from source:
+     pip install -r requirements.txt
+     python mf6voronoi_gui.py
