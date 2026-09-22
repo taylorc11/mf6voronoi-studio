@@ -126,11 +126,11 @@ Start Guide below without preparing your own data first.
 
 ## Documentation
 
-* [`Docs/mf6VoronoiStudio-3.0.0-Quick-Start-Guide.pdf`](Docs/mf6VoronoiStudio-3.0.0-Quick-Start-Guide.pdf)
-  ([Guía de Inicio Rápido](Docs/mf6VoronoiStudio-3.0.0-Guia-de-Inicio-Rapido.pdf)) —
+* [`Docs/mf6VoronoiStudio-3.0.1-Quick-Start-Guide.pdf`](Docs/mf6VoronoiStudio-3.0.1-Quick-Start-Guide.pdf)
+  ([Guía de Inicio Rápido](Docs/mf6VoronoiStudio-3.0.1-Guia-de-Inicio-Rapido.pdf)) —
   a single walkthrough using the `Example/` folder, start to finished mesh.
-* [`Docs/mf6VoronoiStudio-3.0.0-User-Manual.pdf`](Docs/mf6VoronoiStudio-3.0.0-User-Manual.pdf)
-  ([Manual de Usuario](Docs/mf6VoronoiStudio-3.0.0-Manual-de-Usuario.pdf)) —
+* [`Docs/mf6VoronoiStudio-3.0.1-User-Manual.pdf`](Docs/mf6VoronoiStudio-3.0.1-User-Manual.pdf)
+  ([Manual de Usuario](Docs/mf6VoronoiStudio-3.0.1-Manual-de-Usuario.pdf)) —
   the full reference manual, screenshot-by-screenshot.
 
 
